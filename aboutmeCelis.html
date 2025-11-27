@@ -4,81 +4,92 @@
   <meta charset="UTF-8">
   <title>About Me - Jay-B Celis</title>
   <style>
+    /* Reset and Basic Styles */
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f5f5f5;
+      background: #f0f2f5; /* Lighter background */
       padding: 0;
       margin: 0;
-      color: #222;
+      color: #333; /* Darker text for readability */
+      line-height: 1.6;
     }
     .container {
-      max-width: 600px;
+      max-width: 700px; /* Increased width for better flow */
       margin: 40px auto;
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-      padding: 30px 40px;
+      border-radius: 12px; /* Slightly more rounded */
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Deeper shadow */
+      padding: 40px 50px;
     }
+
+    /* Header and Profile */
     h1 {
       text-align: center;
-      color: #0077ff;
+      color: #1a73e8; /* Google-like blue for a modern touch */
       letter-spacing: 2px;
+      margin-top: 0;
+      font-size: 2.2em;
     }
     .profile-section {
       text-align: center;
-      margin-bottom: 18px;
-    }
-    .profile-label {
-      display: block;
-      font-size: 1em;
-      color: #666;
-      margin-bottom: 6px;
-      letter-spacing: 1px;
+      margin-bottom: 25px;
     }
     .profile-img {
       display: block;
-      margin: 0 auto 16px auto;
+      margin: 0 auto 10px auto;
       border-radius: 50%;
-      width: 120px;
-      height: 120px;
+      width: 130px; /* Slightly larger image */
+      height: 130px;
       object-fit: cover;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-      border: 3px solid #e0e7ff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border: 4px solid #c8e6ff; /* New border color */
     }
     .bio {
-      margin-bottom: 18px;
+      margin-bottom: 30px;
       font-size: 1.1em;
       text-align: center;
+      color: #555;
+      padding: 0 15px;
     }
+    
+    /* Section Titles */
     .section-title {
       text-align:center;
-      margin-bottom:8px;
-      font-size:1.15em;
-      color:#0366d6;
-      margin-top: 20px;
-      letter-spacing: 1px;
+      margin-bottom: 15px;
+      font-size: 1.4em; /* Larger title */
+      color: #1a73e8;
+      margin-top: 30px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #f0f2f5;
     }
+
+    /* Skills */
     .skills-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px; /* Increased gap */
       justify-content: center;
       padding: 0;
       margin: 0;
       list-style: none;
     }
     .skills-list li {
-      background: #e0e7ff;
-      color: #333;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.98em;
-      transition: background 0.2s;
-      border: 1px solid #b3c6ff;
+      background: #e6f0ff; /* Lighter background */
+      color: #1a73e8;
+      padding: 8px 18px; /* More padding */
+      border-radius: 25px;
+      font-size: 0.95em;
+      transition: background 0.2s, transform 0.2s;
+      border: 1px solid #c8e6ff;
     }
     .skills-list li:hover {
-      background: #b3c6ff;
+      background: #1a73e8;
+      color: #fff;
+      transform: translateY(-2px);
+      cursor: default;
     }
+
+    /* Education */
     .education-list {
       list-style: none;
       padding: 0;
@@ -86,31 +97,38 @@
       text-align: center;
     }
     .education-list li {
-      background: #f4f8ff;
-      border-radius: 10px;
-      margin: 7px auto;
-      padding: 10px 12px;
+      background: #f7f9fc; /* Very light background */
+      border-radius: 8px;
+      margin: 10px auto;
+      padding: 15px;
       font-size: 1em;
-      max-width: 92%;
-      border: 1px solid #dde4ea;
+      max-width: 100%;
+      border: 1px solid #e0e4e8;
       color: #234;
+      line-height: 1.4;
     }
     .degree {
-      font-weight: bold;
+      font-weight: 700;
+      color: #1a73e8;
+      display: block;
+      margin-bottom: 2px;
     }
     .school {
       color: #555;
+      font-style: italic;
+      display: block;
     }
     .year {
-      font-size: 0.93em;
+      font-size: 0.9em;
       color: #888;
+      display: block;
+      margin-top: 5px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="profile-section">
-      <span class="profile-label">My Photo</span>
       <img src="celismutikmagingtao.jpeg" alt="Jay-B Celis" class="profile-img">
     </div>
     <h1>Jay-B Celis</h1>
@@ -125,24 +143,24 @@
         <li>CSS</li>
         <li>Basic Java</li>
         <li>C++</li>
-      </ul>
+        </ul>
     </div>
     
     <div class="education">
       <h2 class="section-title">Education</h2>
       <ul class="education-list">
         <li>
-          <span class="degree">BSIT, 2nd Year</span> <br>
-          <span class="school">Bestlink College of the Philippines</span> <br>
+          <span class="degree">BSIT, 2nd Year</span>
+          <span class="school">Bestlink College of the Philippines</span>
           <span class="year">2024 – 2026</span>
         </li>
         <li>
-          <span class="degree">TVL-Track ICT Strand, Senior High Graduate</span> <br>
-          <span class="school">Mystical Rose School of Caloocan</span> <br>
+          <span class="degree">TVL-Track ICT Strand, Senior High Graduate</span>
+          <span class="school">Mystical Rose School of Caloocan</span>
           <span class="year">2022 – 2024</span>
         </li>
       </ul>
     </div>
-  </div>
-</body>
+  </div> 
+  </body> 
 </html>
